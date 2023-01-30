@@ -46,9 +46,11 @@ public class BIOServer {
                 log.info("线程id{}，线程名字{}", Thread.currentThread().getId(), Thread.currentThread().getName());
                 log.info("read......");
                 int read = inputStream.read(bytes);
-                if (read != -1) log.info(new String(bytes, 0, read));
-                else
+                if (read != -1) {
+                    log.info(new String(bytes, 0, read));
+                } else {
                     break;
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
