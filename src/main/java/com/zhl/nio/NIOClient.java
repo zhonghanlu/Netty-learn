@@ -22,6 +22,7 @@ public class NIOClient {
         //连接成功，发送数据
         String str = "我是客户端发来的消息。。。";
         ByteBuffer buffer = ByteBuffer.wrap(str.getBytes());
+
         socketChannel.write(buffer);
         System.in.read();
     }
