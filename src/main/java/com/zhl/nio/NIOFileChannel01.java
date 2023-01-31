@@ -4,6 +4,9 @@ import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
+/**
+ * <h1>NIO通过channel写</h1>
+ */
 public class NIOFileChannel01 {
 
     public static void main(String[] args) throws Exception {
